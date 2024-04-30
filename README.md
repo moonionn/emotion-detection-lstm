@@ -8,7 +8,8 @@
 資料集包括標記為不同情緒的句子。我們有三個主要的資料集文件：`train.txt`，`test.txt`和`val.txt`。
 
 ### 預處理
-在`preprocessing.ipynb`和`txtTOcsv.ipynb`筆記本中，我們進行了數據清洗和格式轉換。步驟包括去除停用詞、標點符號和低頻詞。
+在`preprocessing.ipynb`和`txtTOcsv.ipynb`筆記本中，我們進行了資料清洗和格式轉換。
+步驟包括去除停用詞、標點符號和低頻詞。
 
 ### 模型訓練
 使用 GloVe 預訓練詞嵌入和 LSTM 層構建了模型。
