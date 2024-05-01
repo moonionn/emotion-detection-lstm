@@ -33,6 +33,8 @@ emotion-detection-lstm/
 |  text   | 句子 |
 | emotion | 情緒 |
 
+文字雲  
+![wordcloud](output_pic/wordcloud.png)
 
 預處理
 ---
