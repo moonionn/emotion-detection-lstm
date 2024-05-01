@@ -5,8 +5,8 @@
 此項目為使用 LSTM 神經網絡來識別文本中的情緒  
 目標：準確預測文本表達的情緒，如快樂、憤怒、驚訝等。
 
-### 項目架構
-***
+項目架構
+---
 ```
 emotion-detection-lstm/
 ├── originaldataset/ # 存放原始資料
@@ -23,8 +23,8 @@ emotion-detection-lstm/
 └── README.md # 項目文檔
 ```
 
-### 資料集
-***
+資料集
+---
 有三個主要的資料集文件：`train.txt`，`test.txt`和`val.txt`。  
 其中欄位：
 
@@ -34,13 +34,13 @@ emotion-detection-lstm/
 | emotion | 情緒 |
 
 
-### 預處理
-***
+預處理
+---
 `txtTOcsv.ipynb`格式轉換：將.txt轉換為.csv  
 `preprocessing.ipynb`資料清洗：去除停用詞、標點符號、低頻詞
 
-### 模型訓練
-***
+模型訓練
+---
 使用LSTM模型，資料準備
 使用 Tokenizer 從Keras來對文本進行分詞並建立詞彙表
 - 分詞：將所有句子分解成單詞，使用 Tokenizer 從Keras來對文本進行分詞。  
@@ -97,7 +97,8 @@ emotion-detection-lstm/
     ```
 
 
-### 訓練結果
+訓練結果
+---
 **LSTM-model**
 ![pic](output_pic/LSTMmodel_Accuracy&loss.png)
 ```
@@ -113,7 +114,8 @@ Test Loss: 24.85%
 LSTM-model在測試集上達到了 89.95% 的準確率  
 LSTM-GloVe在測試集上達到了 90.60% 的準確率
 
-### 結論
+結論
+---
 模型的性能證明了使用 LSTM 對於情緒分類的有效性。
 證明使用GloVe預訓練詞向量模型提高了模型性能，提高1%準確率、下降接近5％的loss。
 並由上圖可看出：
